@@ -8,3 +8,6 @@ CREATE TABLE "contact" (
     "updated_at" TIMESTAMP NOT NULL DEFAULT ('now'::text)::timestamp(6) with time zone,
     "deleted_at" TIMESTAMP
 );
+
+CREATE INDEX "IDX_contact_phone" ON "contact" ("phone");
+CREATE INDEX "IDX_contact_email" ON "contact" ("email");
