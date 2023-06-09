@@ -2,9 +2,9 @@ type linkPrecedence = 'secondary' | 'primary';
 
 class ContactEntity {
   id: number;
-  phone: string;
-  email: string;
-  linkedId: string;
+  phone: string | null;
+  email: string | null;
+  linkedId: number | null;
   linkPrecedence: linkPrecedence;
   createdAt: Date;
   updatedAt: Date;
